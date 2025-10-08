@@ -10,118 +10,234 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
-.AppBAckground {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 100vh;
-  background-size: cover;
+@media (min-width: 768px) {
+  .AppBAckground {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background-size: cover;
+  }
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    padding-left: 40px;
+    height: 10%;
+    background-color: #f1f5f9;
+    margin-bottom: 20px;
+  }
+  .navbarImage {
+    width: 150px;
+  }
+  .SelectSectionContainer {
+    width: 100%;
+    padding-left: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+  }
+  .selectOPtions {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 1px solid #cbd5e1;
+    color: #475569;
+    border-radius: 8px;
+    cursor: pointer;
+    outline: none;
+    width: 40%;
+  }
+  .itemsList {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    padding: 40px;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    height: 100%;
+    overflow: auto;
+  }
+  .listItemContainer {
+    width: 23%;
+    border-radius: 12px;
+    border: none;
+    box-shadow: 4px 4px 4px #cbd5e1;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    padding: 0px;
+  }
+  .listItemImage {
+    width: 100%;
+    border-radius: 12px;
+    margin: 0px;
+    padding: 0px;
+  }
+  .namePara {
+    text-align: center;
+    font-size: 13px;
+    color: #475569;
+    font-weight: 600;
+  }
+  .failureViewContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    width: 100%;
+  }
+  .failureImage {
+    width: 40%;
+    margin-bottom: 20px;
+  }
+  .failureHeading {
+    font-size: 35px;
+    color: #475569;
+    margin-bottom: 20px;
+  }
+  .failuretext {
+    font-size: 20px;
+    color: #475569;
+    margin-bottom: 20px;
+  }
+  .retryButton {
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 12px;
+    background-color: #328af2;
+    color: #e2e8f0;
+  }
+  .loaderContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    width: 100%;
+  }
 }
-.navbar {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  width: 100%;
-  padding: 20px;
-  padding-left: 40px;
-  height: 120px;
-  background-color: #f1f5f9;
-  margin-bottom: 20px;
-}
-.navbarImage {
-  width: 150px;
-}
-.SelectSectionContainer {
-  width: 100%;
-  padding-left: 40px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  margin-bottom: 20px;
-}
-.selectOPtions {
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  border: 1px solid #cbd5e1;
-  color: #475569;
-  border-radius: 8px;
-  cursor: pointer;
-  outline: none;
-  width: 40%;
-}
-.itemsList {
-  list-style-type: none;
-  display: flex;
-  align-items: center;
-  padding: 40px;
-  width: 100%;
-  flex-wrap: wrap;
-  margin-bottom: 20px;
-  height: 100%;
-  overflow: auto;
-}
-.listItemContainer {
-  width: 23%;
-  border-radius: 12px;
-  border: none;
-  box-shadow: 4px 4px 4px #cbd5e1;
-  margin-right: 20px;
-  margin-bottom: 20px;
-  padding: 0px;
-}
-.listItemImage {
-  width: 100%;
-  border-radius: 12px;
-  margin: 0px;
-  padding: 0px;
-}
-.namePara {
-  padding-left: 20px;
-  font-size: 18px;
-  color: #475569;
-  font-weight: 600;
-}
-.failureViewContainer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 40px;
-  width: 100%;
-}
-.failureImage {
-  width: 40%;
-  margin-bottom: 20px;
-}
-.failureHeading {
-  font-size: 35px;
-  color: #475569;
-  margin-bottom: 20px;
-}
-.failuretext {
-  font-size: 20px;
-  color: #475569;
-  margin-bottom: 20px;
-}
-.retryButton {
-  padding-left: 25px;
-  padding-right: 25px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  border-radius: 12px;
-  background-color: #328af2;
-  color: #e2e8f0;
-}
-.loaderContainer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 40px;
-  width: 100%;
+@media (max-width: 767px) {
+  .AppBAckground {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background-size: cover;
+  }
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    padding-left: 40px;
+    height: 10%;
+    background-color: #f1f5f9;
+    margin-bottom: 20px;
+  }
+  .navbarImage {
+    width: 150px;
+  }
+  .SelectSectionContainer {
+    width: 100%;
+    padding-left: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+  }
+  .selectOPtions {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 1px solid #cbd5e1;
+    color: #475569;
+    border-radius: 8px;
+    cursor: pointer;
+    outline: none;
+    width: 40%;
+  }
+  .itemsList {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    flex-wrap: wrap;
+    height: 100vh;
+    overflow: auto;
+  }
+  .listItemContainer {
+    width: 23%;
+    border-radius: 12px;
+    border: none;
+    box-shadow: 4px 4px 4px #cbd5e1;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 0px;
+  }
+  .listItemImage {
+    width: 100%;
+    border-radius: 12px;
+    margin: 0px;
+    padding: 0px;
+  }
+  .namePara {
+    text-align: center;
+    font-size: 13px;
+    color: #475569;
+    font-weight: 600;
+  }
+  .failureViewContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    width: 100%;
+  }
+  .failureImage {
+    width: 40%;
+    margin-bottom: 20px;
+  }
+  .failureHeading {
+    font-size: 35px;
+    color: #475569;
+    margin-bottom: 20px;
+  }
+  .failuretext {
+    font-size: 20px;
+    color: #475569;
+    margin-bottom: 20px;
+  }
+  .retryButton {
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 12px;
+    background-color: #328af2;
+    color: #e2e8f0;
+  }
+  .loaderContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    width: 100%;
+  }
 }
